@@ -898,7 +898,7 @@ function renderDashboard(){
       <div class="proj-progress-row">
         <div class="proj-progress-head">
           <span class="name"><span class="proj-dot" style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${projectColor(p.id)}"></span> ${escapeHtml(p.name)}</span>
-          <span class="pct">${pct}% · ${pDone.length}/${pActive.length} done</span>
+          <span class="pct">${pct}% · ${pDone.length}/${pActive.length} ክንውን</span>
         </div>
         <div class="ach-bar-track"><div class="ach-bar-fill" style="width:${pct}%"></div></div>
       </div>`;
@@ -924,11 +924,11 @@ function renderDashboard(){
         <div class="stat-rows">${statusRows}</div>
       </div>
       <div class="dash-card">
-        <h3>Achievement by project</h3>
+        <h3>አፈፃፀም በፕሮጄክት</h3>
         ${projRows}
       </div>
       <div class="dash-card" style="grid-column:1 / -1;">
-        <h3>Every task</h3>
+        <h3>ሁሉም ስራዎች</h3>
         ${taskRows}
       </div>
     </div>`;
